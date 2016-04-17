@@ -1,10 +1,12 @@
 import {Component} from 'angular2/core';
 import {ROUTER_DIRECTIVES, RouteConfig} from 'angular2/router';
 import {TodoListComponent} from './todo.list.component';
+import {TodoService} from '../services/todo.service';
 
 @Component({
   templateUrl: 'app/+todo/components/todo.component.html',
-  directives: [ROUTER_DIRECTIVES]
+  directives: [ROUTER_DIRECTIVES],
+  providers: [TodoService]
 })
 @RouteConfig([
   {
