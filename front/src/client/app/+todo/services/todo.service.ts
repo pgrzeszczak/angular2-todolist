@@ -11,9 +11,13 @@ export class TodoService extends BaseHttpService {
         super(http);
     }
 
-    private getTodosUrl = '/todo';
+    private todoUrl = '/todo';
 
     getTodos(): Observable<Todo[]> {
-        return this.get(this.getTodosUrl);
+        return this.get(this.todoUrl);
+    }
+
+    add(todo: Todo) {
+        return this.post(this.todoUrl, todo);
     }
 }

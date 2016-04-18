@@ -20,8 +20,14 @@ export abstract class BaseHttpService {
         return Observable.throw(errMsg);
     }
 
-    protected get(url: string): Observable<any> {
+    protected get(url: string): Observable<any[]> {
         return this.http.get(this.serverBase + url)
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
+
+    protected post(url: string, data: any): Observable<any> {
+        return this.http.post(this.serverBase + url, JSON.stringify(data))
             .map(this.extractData)
             .catch(this.handleError);
     }
