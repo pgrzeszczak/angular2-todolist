@@ -28,6 +28,6 @@ export class TodoListComponent implements OnInit {
     }
 
     onRemove(todo: Todo) {
-        _.remove(this.todos, (l_todo) => l_todo.id == todo.id);
+        _.remove(this.todos, (l_todo) => l_todo.id === todo.id);
     }
 }
