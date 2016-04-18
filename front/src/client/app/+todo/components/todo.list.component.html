@@ -4,5 +4,5 @@
 </p>
 <todo-new (add)="onAdd($event)"></todo-new>
 <ul>
-  <li *ngFor="#todo of todos">{{todo.name}}</li>
+  <li *ngFor="#todo of todos"><todo-entry [todo]="todo" (remove)="onRemove($event)"></todo-entry></li>
 </ul>

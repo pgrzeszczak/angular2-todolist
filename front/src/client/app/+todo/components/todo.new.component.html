@@ -1,1 +1,1 @@
-<input type="text" name="name" [(ngModel)]="name" (keyup)="$event.keyCode == 13 && addTodo()"><button (click)="addTodo()">Add</button>
+<input type="text" name="name" [(ngModel)]="name" (keyup.enter)="addTodo()"><button (click)="addTodo()">Add</button>

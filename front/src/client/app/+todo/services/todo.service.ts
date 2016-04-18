@@ -20,4 +20,12 @@ export class TodoService extends BaseHttpService {
     add(todo: Todo) {
         return this.post(this.todoUrl, todo);
     }
+
+    remove(todo: Todo) {
+        return this.delete(this.todoUrl + '/' + todo.id);
+    }
+
+    update(todo: Todo) {
+        return this.put(this.todoUrl + '/' + todo.id, todo);
+    }
 }

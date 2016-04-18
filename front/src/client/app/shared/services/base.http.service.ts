@@ -31,4 +31,16 @@ export abstract class BaseHttpService {
             .map(this.extractData)
             .catch(this.handleError);
     }
+
+    protected put(url: string, data: any): Observable<any> {
+        return this.http.put(this.serverBase + url, JSON.stringify(data))
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
+
+    protected delete(url: string): Observable<any> {
+        return this.http.delete(this.serverBase + url)
+            .map(this.extractData)
+            .catch(this.handleError);
+    }
 }
