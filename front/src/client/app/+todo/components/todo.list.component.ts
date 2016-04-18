@@ -1,6 +1,7 @@
 import {Component, OnInit} from 'angular2/core';
 import {CORE_DIRECTIVES, FORM_DIRECTIVES} from 'angular2/common';
-import {TodoService, Todo} from '../services/todo.service';
+import {TodoService} from '../services/todo.service';
+import {Todo} from '../models/todo.model';
 
 @Component({
   templateUrl: 'app/+todo/components/todo.list.component.html',
