@@ -1,1 +1,8 @@
-<span>{{todo.name}}</span><input type="checkbox" name="done" [ngModel]="todo.done" (ngModelChange)="todo.done=$event; updateTodo($event) "><button (click)="deleteTodo()">Delete</button>
+<div class="checkboxLine">
+    <span>{{todo.name}}</span>
+    <div class="checkbox">
+        <input type="checkbox" [attr.id]="'todo.done.'+todo.id" name="done" [ngModel]="todo.done" (ngModelChange)="todo.done=$event; updateTodo($event) ">
+        <label [attr.for]="'todo.done.'+todo.id"></label>
+    </div>
+    <button (click)="deleteTodo()">Delete</button>
+</div>
