@@ -4,6 +4,7 @@ import {TodoListComponent} from './todo.list.component';
 import {TodoService} from '../services/todo.service';
 
 @Component({
+  selector: 'todo-cmp',
   templateUrl: 'app/+todo/components/todo.component.html',
   directives: [ROUTER_DIRECTIVES],
   providers: [TodoService]

@@ -1,13 +1,15 @@
-import {Component, Output, EventEmitter} from 'angular2/core';
+import {Component, Output, EventEmitter, HostBinding} from 'angular2/core';
 import {TodoService} from '../services/todo.service';
 import {Todo} from '../models/todo.model';
 
 @Component({
     selector: 'todo-new',
-    templateUrl: 'app/+todo/components/todo.new.component.html'
+    templateUrl: 'app/+todo/components/todo.new.component.html',
+    styleUrls: ['app/shared/styles/flex.fillspace.css']
 })
 export class TodoNewComponent {
     name: string = '';
+    @HostBinding('class.flexibleFillSpace') true: boolean;
     @Output() add: EventEmitter<Todo> = new EventEmitter();
     constructor(private todoService: TodoService) {}
 

@@ -1,0 +1,13 @@
+/* doiuse-disable flexbox */
+
+:host.flexibleFillSpace,
+.flexibleFillSpace {
+  display: flex;
+  flex-flow: row;
+}
+
+.fillSpace {
+  flex: 1;
+}
+
+/* doiuse-disable flexbox */

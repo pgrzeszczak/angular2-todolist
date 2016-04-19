@@ -117,3 +117,7 @@ button {
 button:hover {
   background-color: #28739e;
 }
+
+.margin-l-10 {
+  margin-left: 10px;
+}

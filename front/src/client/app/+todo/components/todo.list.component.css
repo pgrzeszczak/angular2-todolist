@@ -9,5 +9,36 @@ input {
 
 ul {
   list-style-type: none;
-  padding: 0 0 0 8px;
+  padding: 10px 0;
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  padding: 2px 0 2px 10px;
+  border-left: 1px solid #106cc8;
+}
+
+li::before,
+li:last-of-type::after {
+  content: "";
+  height: 1px;
+  background: linear-gradient(to right, rgba(16, 108, 200, 1) 0%, rgba(16, 108, 200, 0) 5%);
+  background-size: 100% 1px;
+  display: block;
+  position: relative;
+  left: -10px;
+}
+
+li::before {
+  top: -2px;
+}
+
+li::after {
+  top: 2px;
+}
+
+.centerBlock {
+  width: 50%;
+  margin: 0 auto;
 }

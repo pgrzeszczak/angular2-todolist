@@ -4,7 +4,7 @@ import * as merge from 'merge-stream';
 import * as reporter from 'postcss-reporter';
 import * as stylelint from 'stylelint';
 import * as doiuse from 'doiuse';
-import * as colorguard from 'colorguard';
+// import * as colorguard from 'colorguard';
 import {join} from 'path';
 import {APP_SRC, APP_ASSETS, ASSETS_SRC, BROWSER_LIST, ENV} from '../../config';
 const plugins = <any>gulpLoadPlugins();
@@ -15,7 +15,7 @@ const processors = [
   doiuse({
     browsers: BROWSER_LIST,
   }),
-  colorguard(),
+  // colorguard(),
   stylelint(),
   reporter({clearMessages: true})
 ];

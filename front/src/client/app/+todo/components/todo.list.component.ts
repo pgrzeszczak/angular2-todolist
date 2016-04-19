@@ -7,6 +7,7 @@ import {TodoEntryComponent} from './todo.entry.component';
 import * as _ from 'lodash';
 
 @Component({
+  selector: 'todo-list-cmp',
   templateUrl: 'app/+todo/components/todo.list.component.html',
   styleUrls: ['app/+todo/components/todo.list.component.css'],
   directives: [FORM_DIRECTIVES, CORE_DIRECTIVES, TodoNewComponent, TodoEntryComponent]

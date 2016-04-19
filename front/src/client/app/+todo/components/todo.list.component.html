@@ -1,7 +1,9 @@
 <p>
   Create your own todolist! Lol!
 </p>
-<todo-new (add)="onAdd($event)"></todo-new>
-<ul>
-  <li *ngFor="#todo of todos"><todo-entry [todo]="todo" (remove)="onRemove($event)"></todo-entry></li>
-</ul>
+<div class="centerBlock">
+  <todo-new (add)="onAdd($event)"></todo-new>
+  <ul>
+    <li *ngFor="#todo of todos"><todo-entry [todo]="todo" (remove)="onRemove($event)"></todo-entry></li>
+  </ul>
+</div>
