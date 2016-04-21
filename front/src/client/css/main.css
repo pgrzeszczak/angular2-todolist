@@ -57,6 +57,7 @@ input[type=checkbox] {
 
 .checkbox {
   width: 124px;
+  min-width: 124px;
   height: 40px;
   border-radius: 50px;
   border: 1px solid #106cc8;

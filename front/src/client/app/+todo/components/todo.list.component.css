@@ -23,7 +23,7 @@ li::before,
 li:last-of-type::after {
   content: "";
   height: 1px;
-  background: linear-gradient(to right, rgba(16, 108, 200, 1) 0%, rgba(16, 108, 200, 0) 5%);
+  background: linear-gradient(to right, rgba(16, 108, 200, 1) 0%, rgba(16, 108, 200, 0) 7.5%);
   background-size: 100% 1px;
   display: block;
   position: relative;

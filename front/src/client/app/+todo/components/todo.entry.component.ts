@@ -5,7 +5,7 @@ import {Todo} from '../models/todo.model';
 @Component({
     selector: 'todo-entry',
     templateUrl: 'app/+todo/components/todo.entry.component.html',
-    styleUrls: ['app/shared/styles/flex.fillspace.css']
+    styleUrls: ['app/shared/styles/flex.fillspace.css', 'app/+todo/components/todo.entry.component.css']
 })
 export class TodoEntryComponent {
     @Input() todo: Todo;
