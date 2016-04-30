@@ -10,7 +10,7 @@ import {Todo} from '../models/todo.model';
 export class TodoNewComponent {
     name: string = '';
     @HostBinding('class.flexibleFillSpace') true: boolean;
-    @Output() add: EventEmitter<Todo> = new EventEmitter();
+    @Output() add: EventEmitter<Todo> = new EventEmitter<Todo>();
     constructor(private todoService: TodoService) {}
 
     addTodo() {

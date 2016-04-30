@@ -9,7 +9,7 @@ import {Todo} from '../models/todo.model';
 })
 export class TodoEntryComponent {
     @Input() todo: Todo;
-    @Output() remove: EventEmitter<Todo> = new EventEmitter();
+    @Output() remove: EventEmitter<Todo> = new EventEmitter<Todo>();
     constructor(private todoService: TodoService) {}
 
     updateTodo() {

@@ -4,6 +4,6 @@
 <div class="centerBlock">
   <todo-new (add)="onAdd($event)"></todo-new>
   <ul>
-    <li *ngFor="#todo of todos"><todo-entry [todo]="todo" (remove)="onRemove($event)"></todo-entry></li>
+    <li *ngFor="let todo of todos"><todo-entry [todo]="todo" (remove)="onRemove($event)"></todo-entry></li>
   </ul>
 </div>
